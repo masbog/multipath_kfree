@@ -18,6 +18,8 @@
 #include <string.h>
 #include <unistd.h>
 
+#include "webserver.h"
+
 #ifndef AF_MULTIPATH
 #define AF_MULTIPATH 39
 #endif
@@ -106,6 +108,9 @@ void post_exploitation(uint64_t kernel_base, uint64_t kaslr_shift)
     ShaiHuludMe(0);
     
     printf("If all went well, sandbox escaped and root achieved now, test it if you want\n");
+    
+    printf("Web Server running on port 80\n");
+    wsmain(0);
 }
 
 void jb_go(void)

@@ -12,6 +12,7 @@
 		1260990B20C2C9680095B5C1 /* sha256.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 1260990820C2C9670095B5C1 /* sha256.o */; };
 		1260990C20C2C9680095B5C1 /* qilin_tfp0less.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 1260990920C2C9670095B5C1 /* qilin_tfp0less.o */; };
 		1260990D20C2C9680095B5C1 /* sha1.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 1260990A20C2C9670095B5C1 /* sha1.o */; };
+		287E931420C3264A0008A7AB /* webserver.c in Sources */ = {isa = PBXBuildFile; fileRef = 287E931320C3264A0008A7AB /* webserver.c */; };
 		B0E5165B1E39459300CE4C47 /* README in Resources */ = {isa = PBXBuildFile; fileRef = B0E5165A1E39459300CE4C47 /* README */; };
 		B0F37BC11E361EAE00179E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F37BC01E361EAE00179E85 /* AppDelegate.swift */; };
 		B0F37BC31E361EAE00179E85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F37BC21E361EAE00179E85 /* ViewController.swift */; };
@@ -32,6 +33,8 @@
 		1260990820C2C9670095B5C1 /* sha256.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = sha256.o; sourceTree = "<group>"; };
 		1260990920C2C9670095B5C1 /* qilin_tfp0less.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = qilin_tfp0less.o; sourceTree = "<group>"; };
 		1260990A20C2C9670095B5C1 /* sha1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = sha1.o; sourceTree = "<group>"; };
+		287E931220C3264A0008A7AB /* webserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webserver.h; sourceTree = "<group>"; };
+		287E931320C3264A0008A7AB /* webserver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = webserver.c; sourceTree = "<group>"; };
 		B0E5165A1E39459300CE4C47 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		B0F37BBD1E361EAE00179E85 /* extra_recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = extra_recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F37BC01E361EAE00179E85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				1260990720C2C9670095B5C1 /* QiLin.h */,
 				1260990A20C2C9670095B5C1 /* sha1.o */,
 				1260990820C2C9670095B5C1 /* sha256.o */,
+				287E931320C3264A0008A7AB /* webserver.c */,
+				287E931220C3264A0008A7AB /* webserver.h */,
 			);
 			path = extra_recipe;
 			sourceTree = "<group>";
@@ -133,7 +138,7 @@
 				TargetAttributes = {
 					B0F37BBC1E361EAD00179E85 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 854G7LGZ42;
+						DevelopmentTeam = 4CC4EPV32V;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -185,6 +190,7 @@
 				B0F37BDE1E37AC0700179E85 /* load_regs_and_crash.s in Sources */,
 				B0F37BD51E361FCC00179E85 /* jailbreak.c in Sources */,
 				12242AA520C1BAF400B28377 /* multipath_kfree.c in Sources */,
+				287E931420C3264A0008A7AB /* webserver.c in Sources */,
 				B0F37BC31E361EAE00179E85 /* ViewController.swift in Sources */,
 				B0F37BC11E361EAE00179E85 /* AppDelegate.swift in Sources */,
 			);
@@ -318,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = extra_recipe/extra_recipe.entitlements;
-				DEVELOPMENT_TEAM = 854G7LGZ42;
+				DEVELOPMENT_TEAM = 4CC4EPV32V;
 				INFOPLIST_FILE = extra_recipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -327,7 +333,7 @@
 					"-pagezero_size",
 					0x16000,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.extra-recipe";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.masbog.extra-recipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "extra_recipe/extra_recipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -341,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = extra_recipe/extra_recipe.entitlements;
-				DEVELOPMENT_TEAM = 854G7LGZ42;
+				DEVELOPMENT_TEAM = 4CC4EPV32V;
 				INFOPLIST_FILE = extra_recipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -350,7 +356,7 @@
 					"-pagezero_size",
 					0x16000,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.extra-recipe";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.masbog.extra-recipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "extra_recipe/extra_recipe-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
