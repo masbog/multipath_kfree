@@ -13,6 +13,100 @@
 		1260990C20C2C9680095B5C1 /* qilin_tfp0less.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 1260990920C2C9670095B5C1 /* qilin_tfp0less.o */; };
 		1260990D20C2C9680095B5C1 /* sha1.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 1260990A20C2C9670095B5C1 /* sha1.o */; };
 		287E931420C3264A0008A7AB /* webserver.c in Sources */ = {isa = PBXBuildFile; fileRef = 287E931320C3264A0008A7AB /* webserver.c */; };
+		28AEB58820C44A7C00B096A3 /* dropbear.orig in Resources */ = {isa = PBXBuildFile; fileRef = 28AEB58420C44A7B00B096A3 /* dropbear.orig */; };
+		28AEB58920C44A7C00B096A3 /* dropbearkey in Resources */ = {isa = PBXBuildFile; fileRef = 28AEB58520C44A7B00B096A3 /* dropbearkey */; };
+		28AEB58A20C44A7C00B096A3 /* dropbearconvert in Resources */ = {isa = PBXBuildFile; fileRef = 28AEB58620C44A7C00B096A3 /* dropbearconvert */; };
+		28AEB58B20C44A7C00B096A3 /* dropbear in Resources */ = {isa = PBXBuildFile; fileRef = 28AEB58720C44A7C00B096A3 /* dropbear */; };
+		28EE4F9120C444B100A46A28 /* bash in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F7C20C444B100A46A28 /* bash */; };
+		28EE4F9220C444B100A46A28 /* cat in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F7D20C444B100A46A28 /* cat */; };
+		28EE4F9320C444B100A46A28 /* chmod in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F7E20C444B100A46A28 /* chmod */; };
+		28EE4F9420C444B100A46A28 /* cp in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F7F20C444B100A46A28 /* cp */; };
+		28EE4F9520C444B100A46A28 /* date in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8020C444B100A46A28 /* date */; };
+		28EE4F9620C444B100A46A28 /* dd in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8120C444B100A46A28 /* dd */; };
+		28EE4F9720C444B100A46A28 /* hostname in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8220C444B100A46A28 /* hostname */; };
+		28EE4F9820C444B100A46A28 /* kill in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8320C444B100A46A28 /* kill */; };
+		28EE4F9920C444B100A46A28 /* launchctl in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8420C444B100A46A28 /* launchctl */; };
+		28EE4F9A20C444B100A46A28 /* ln in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8520C444B100A46A28 /* ln */; };
+		28EE4F9B20C444B100A46A28 /* ls in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8620C444B100A46A28 /* ls */; };
+		28EE4F9C20C444B100A46A28 /* mkdir in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8720C444B100A46A28 /* mkdir */; };
+		28EE4F9D20C444B100A46A28 /* mv in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8820C444B100A46A28 /* mv */; };
+		28EE4F9E20C444B100A46A28 /* pwd in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8920C444B100A46A28 /* pwd */; };
+		28EE4F9F20C444B100A46A28 /* rm in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8A20C444B100A46A28 /* rm */; };
+		28EE4FA020C444B100A46A28 /* rmdir in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8B20C444B100A46A28 /* rmdir */; };
+		28EE4FA120C444B100A46A28 /* sh in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8C20C444B100A46A28 /* sh */; };
+		28EE4FA220C444B100A46A28 /* sleep in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8D20C444B100A46A28 /* sleep */; };
+		28EE4FA320C444B100A46A28 /* stty in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8E20C444B100A46A28 /* stty */; };
+		28EE4FA420C444B100A46A28 /* sync in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F8F20C444B100A46A28 /* sync */; };
+		28EE4FA520C444B100A46A28 /* zsh in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4F9020C444B100A46A28 /* zsh */; };
+		28EE4FDB20C4451500A46A28 /* split in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FA620C4450F00A46A28 /* split */; };
+		28EE4FDC20C4451500A46A28 /* vim in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FA720C4450F00A46A28 /* vim */; };
+		28EE4FDD20C4451500A46A28 /* clear in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FA820C4451000A46A28 /* clear */; };
+		28EE4FDE20C4451500A46A28 /* hostinfo in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FA920C4451000A46A28 /* hostinfo */; };
+		28EE4FDF20C4451500A46A28 /* tail in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FAA20C4451000A46A28 /* tail */; };
+		28EE4FE020C4451500A46A28 /* arch in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FAB20C4451000A46A28 /* arch */; };
+		28EE4FE120C4451500A46A28 /* wc in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FAC20C4451000A46A28 /* wc */; };
+		28EE4FE220C4451500A46A28 /* gunzip in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FAD20C4451000A46A28 /* gunzip */; };
+		28EE4FE320C4451500A46A28 /* cut in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FAE20C4451100A46A28 /* cut */; };
+		28EE4FE420C4451500A46A28 /* hexdump in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FAF20C4451100A46A28 /* hexdump */; };
+		28EE4FE520C4451500A46A28 /* plconvert in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FB020C4451100A46A28 /* plconvert */; };
+		28EE4FE620C4451500A46A28 /* reset in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FB120C4451100A46A28 /* reset */; };
+		28EE4FE720C4451500A46A28 /* vm_stat in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FB220C4451100A46A28 /* vm_stat */; };
+		28EE4FE820C4451500A46A28 /* sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FB320C4451100A46A28 /* sqlite3 */; };
+		28EE4FE920C4451500A46A28 /* chflags in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FB420C4451100A46A28 /* chflags */; };
+		28EE4FEA20C4451500A46A28 /* gzip in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FB520C4451100A46A28 /* gzip */; };
+		28EE4FEB20C4451500A46A28 /* renice in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FB620C4451100A46A28 /* renice */; };
+		28EE4FEC20C4451500A46A28 /* screen in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FB720C4451100A46A28 /* screen */; };
+		28EE4FED20C4451500A46A28 /* sed in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FB820C4451100A46A28 /* sed */; };
+		28EE4FEE20C4451500A46A28 /* sc_usage in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FB920C4451200A46A28 /* sc_usage */; };
+		28EE4FEF20C4451500A46A28 /* fs_usage in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FBA20C4451200A46A28 /* fs_usage */; };
+		28EE4FF020C4451500A46A28 /* login in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FBB20C4451200A46A28 /* login */; };
+		28EE4FF120C4451500A46A28 /* true in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FBC20C4451200A46A28 /* true */; };
+		28EE4FF220C4451500A46A28 /* less in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FBD20C4451200A46A28 /* less */; };
+		28EE4FF320C4451500A46A28 /* printf in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FBE20C4451200A46A28 /* printf */; };
+		28EE4FF420C4451500A46A28 /* id in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FBF20C4451200A46A28 /* id */; };
+		28EE4FF520C4451500A46A28 /* script in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FC020C4451200A46A28 /* script */; };
+		28EE4FF620C4451500A46A28 /* scp in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FC120C4451200A46A28 /* scp */; };
+		28EE4FF720C4451500A46A28 /* du in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FC220C4451300A46A28 /* du */; };
+		28EE4FF820C4451500A46A28 /* head in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FC320C4451300A46A28 /* head */; };
+		28EE4FF920C4451500A46A28 /* stat in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FC420C4451300A46A28 /* stat */; };
+		28EE4FFA20C4451500A46A28 /* uname in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FC520C4451300A46A28 /* uname */; };
+		28EE4FFB20C4451500A46A28 /* which in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FC620C4451300A46A28 /* which */; };
+		28EE4FFC20C4451500A46A28 /* tar in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FC720C4451300A46A28 /* tar */; };
+		28EE4FFD20C4451500A46A28 /* syslog in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FC820C4451300A46A28 /* syslog */; };
+		28EE4FFE20C4451500A46A28 /* passwd in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FC920C4451300A46A28 /* passwd */; };
+		28EE4FFF20C4451500A46A28 /* xargs in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FCA20C4451300A46A28 /* xargs */; };
+		28EE500020C4451500A46A28 /* find in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FCB20C4451300A46A28 /* find */; };
+		28EE500120C4451500A46A28 /* grep in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FCC20C4451400A46A28 /* grep */; };
+		28EE500220C4451500A46A28 /* lsmp in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FCD20C4451400A46A28 /* lsmp */; };
+		28EE500320C4451500A46A28 /* w in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FCE20C4451400A46A28 /* w */; };
+		28EE500420C4451500A46A28 /* xxd in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FCF20C4451400A46A28 /* xxd */; };
+		28EE500520C4451500A46A28 /* false in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FD020C4451400A46A28 /* false */; };
+		28EE500620C4451500A46A28 /* nano in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FD120C4451400A46A28 /* nano */; };
+		28EE500720C4451500A46A28 /* what in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FD220C4451400A46A28 /* what */; };
+		28EE500820C4451500A46A28 /* nohup in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FD320C4451400A46A28 /* nohup */; };
+		28EE500920C4451500A46A28 /* seq in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FD420C4451400A46A28 /* seq */; };
+		28EE500A20C4451500A46A28 /* tset in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FD520C4451400A46A28 /* tset */; };
+		28EE500B20C4451500A46A28 /* time in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FD620C4451500A46A28 /* time */; };
+		28EE500C20C4451500A46A28 /* killall in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FD720C4451500A46A28 /* killall */; };
+		28EE500D20C4451500A46A28 /* tee in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FD820C4451500A46A28 /* tee */; };
+		28EE500E20C4451500A46A28 /* uicache in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FD920C4451500A46A28 /* uicache */; };
+		28EE500F20C4451500A46A28 /* more in Resources */ = {isa = PBXBuildFile; fileRef = 28EE4FDA20C4451500A46A28 /* more */; };
+		28EE501820C4452700A46A28 /* ioreg in Resources */ = {isa = PBXBuildFile; fileRef = 28EE501020C4452500A46A28 /* ioreg */; };
+		28EE501920C4452700A46A28 /* joreg in Resources */ = {isa = PBXBuildFile; fileRef = 28EE501120C4452600A46A28 /* joreg */; };
+		28EE501A20C4452700A46A28 /* kextstat in Resources */ = {isa = PBXBuildFile; fileRef = 28EE501220C4452600A46A28 /* kextstat */; };
+		28EE501B20C4452700A46A28 /* taskpolicy in Resources */ = {isa = PBXBuildFile; fileRef = 28EE501320C4452600A46A28 /* taskpolicy */; };
+		28EE501C20C4452700A46A28 /* ltop in Resources */ = {isa = PBXBuildFile; fileRef = 28EE501420C4452600A46A28 /* ltop */; };
+		28EE501D20C4452700A46A28 /* sysctl in Resources */ = {isa = PBXBuildFile; fileRef = 28EE501520C4452600A46A28 /* sysctl */; };
+		28EE501E20C4452700A46A28 /* netstat in Resources */ = {isa = PBXBuildFile; fileRef = 28EE501620C4452600A46A28 /* netstat */; };
+		28EE501F20C4452700A46A28 /* chown in Resources */ = {isa = PBXBuildFile; fileRef = 28EE501720C4452700A46A28 /* chown */; };
+		28EE502820C4453100A46A28 /* ifconfig in Resources */ = {isa = PBXBuildFile; fileRef = 28EE502020C4452F00A46A28 /* ifconfig */; };
+		28EE502920C4453100A46A28 /* mknod in Resources */ = {isa = PBXBuildFile; fileRef = 28EE502120C4452F00A46A28 /* mknod */; };
+		28EE502A20C4453100A46A28 /* kextunload in Resources */ = {isa = PBXBuildFile; fileRef = 28EE502220C4452F00A46A28 /* kextunload */; };
+		28EE502B20C4453100A46A28 /* md5 in Resources */ = {isa = PBXBuildFile; fileRef = 28EE502320C4453000A46A28 /* md5 */; };
+		28EE502C20C4453100A46A28 /* dmesg in Resources */ = {isa = PBXBuildFile; fileRef = 28EE502420C4453000A46A28 /* dmesg */; };
+		28EE502D20C4453100A46A28 /* umount in Resources */ = {isa = PBXBuildFile; fileRef = 28EE502520C4453000A46A28 /* umount */; };
+		28EE502E20C4453100A46A28 /* shutdown in Resources */ = {isa = PBXBuildFile; fileRef = 28EE502620C4453000A46A28 /* shutdown */; };
+		28EE502F20C4453100A46A28 /* ping in Resources */ = {isa = PBXBuildFile; fileRef = 28EE502720C4453100A46A28 /* ping */; };
 		B0E5165B1E39459300CE4C47 /* README in Resources */ = {isa = PBXBuildFile; fileRef = B0E5165A1E39459300CE4C47 /* README */; };
 		B0F37BC11E361EAE00179E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F37BC01E361EAE00179E85 /* AppDelegate.swift */; };
 		B0F37BC31E361EAE00179E85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F37BC21E361EAE00179E85 /* ViewController.swift */; };
@@ -35,6 +129,101 @@
 		1260990A20C2C9670095B5C1 /* sha1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = sha1.o; sourceTree = "<group>"; };
 		287E931220C3264A0008A7AB /* webserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webserver.h; sourceTree = "<group>"; };
 		287E931320C3264A0008A7AB /* webserver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = webserver.c; sourceTree = "<group>"; };
+		28AEB58420C44A7B00B096A3 /* dropbear.orig */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = dropbear.orig; sourceTree = "<group>"; };
+		28AEB58520C44A7B00B096A3 /* dropbearkey */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = dropbearkey; sourceTree = "<group>"; };
+		28AEB58620C44A7C00B096A3 /* dropbearconvert */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = dropbearconvert; sourceTree = "<group>"; };
+		28AEB58720C44A7C00B096A3 /* dropbear */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = dropbear; sourceTree = "<group>"; };
+		28EE4F7720C43E4700A46A28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28EE4F7C20C444B100A46A28 /* bash */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = bash; sourceTree = "<group>"; };
+		28EE4F7D20C444B100A46A28 /* cat */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = cat; sourceTree = "<group>"; };
+		28EE4F7E20C444B100A46A28 /* chmod */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = chmod; sourceTree = "<group>"; };
+		28EE4F7F20C444B100A46A28 /* cp */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = cp; sourceTree = "<group>"; };
+		28EE4F8020C444B100A46A28 /* date */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = date; sourceTree = "<group>"; };
+		28EE4F8120C444B100A46A28 /* dd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = dd; sourceTree = "<group>"; };
+		28EE4F8220C444B100A46A28 /* hostname */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = hostname; sourceTree = "<group>"; };
+		28EE4F8320C444B100A46A28 /* kill */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = kill; sourceTree = "<group>"; };
+		28EE4F8420C444B100A46A28 /* launchctl */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = launchctl; sourceTree = "<group>"; };
+		28EE4F8520C444B100A46A28 /* ln */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ln; sourceTree = "<group>"; };
+		28EE4F8620C444B100A46A28 /* ls */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ls; sourceTree = "<group>"; };
+		28EE4F8720C444B100A46A28 /* mkdir */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mkdir; sourceTree = "<group>"; };
+		28EE4F8820C444B100A46A28 /* mv */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mv; sourceTree = "<group>"; };
+		28EE4F8920C444B100A46A28 /* pwd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pwd; sourceTree = "<group>"; };
+		28EE4F8A20C444B100A46A28 /* rm */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rm; sourceTree = "<group>"; };
+		28EE4F8B20C444B100A46A28 /* rmdir */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = rmdir; sourceTree = "<group>"; };
+		28EE4F8C20C444B100A46A28 /* sh */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sh; sourceTree = "<group>"; };
+		28EE4F8D20C444B100A46A28 /* sleep */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sleep; sourceTree = "<group>"; };
+		28EE4F8E20C444B100A46A28 /* stty */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = stty; sourceTree = "<group>"; };
+		28EE4F8F20C444B100A46A28 /* sync */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sync; sourceTree = "<group>"; };
+		28EE4F9020C444B100A46A28 /* zsh */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = zsh; sourceTree = "<group>"; };
+		28EE4FA620C4450F00A46A28 /* split */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = split; sourceTree = "<group>"; };
+		28EE4FA720C4450F00A46A28 /* vim */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = vim; sourceTree = "<group>"; };
+		28EE4FA820C4451000A46A28 /* clear */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = clear; sourceTree = "<group>"; };
+		28EE4FA920C4451000A46A28 /* hostinfo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = hostinfo; sourceTree = "<group>"; };
+		28EE4FAA20C4451000A46A28 /* tail */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tail; sourceTree = "<group>"; };
+		28EE4FAB20C4451000A46A28 /* arch */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = arch; sourceTree = "<group>"; };
+		28EE4FAC20C4451000A46A28 /* wc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = wc; sourceTree = "<group>"; };
+		28EE4FAD20C4451000A46A28 /* gunzip */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = gunzip; sourceTree = "<group>"; };
+		28EE4FAE20C4451100A46A28 /* cut */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = cut; sourceTree = "<group>"; };
+		28EE4FAF20C4451100A46A28 /* hexdump */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = hexdump; sourceTree = "<group>"; };
+		28EE4FB020C4451100A46A28 /* plconvert */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = plconvert; sourceTree = "<group>"; };
+		28EE4FB120C4451100A46A28 /* reset */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = reset; sourceTree = "<group>"; };
+		28EE4FB220C4451100A46A28 /* vm_stat */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = vm_stat; sourceTree = "<group>"; };
+		28EE4FB320C4451100A46A28 /* sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sqlite3; sourceTree = "<group>"; };
+		28EE4FB420C4451100A46A28 /* chflags */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = chflags; sourceTree = "<group>"; };
+		28EE4FB520C4451100A46A28 /* gzip */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = gzip; sourceTree = "<group>"; };
+		28EE4FB620C4451100A46A28 /* renice */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = renice; sourceTree = "<group>"; };
+		28EE4FB720C4451100A46A28 /* screen */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = screen; sourceTree = "<group>"; };
+		28EE4FB820C4451100A46A28 /* sed */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sed; sourceTree = "<group>"; };
+		28EE4FB920C4451200A46A28 /* sc_usage */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sc_usage; sourceTree = "<group>"; };
+		28EE4FBA20C4451200A46A28 /* fs_usage */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = fs_usage; sourceTree = "<group>"; };
+		28EE4FBB20C4451200A46A28 /* login */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = login; sourceTree = "<group>"; };
+		28EE4FBC20C4451200A46A28 /* true */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = true; sourceTree = "<group>"; };
+		28EE4FBD20C4451200A46A28 /* less */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = less; sourceTree = "<group>"; };
+		28EE4FBE20C4451200A46A28 /* printf */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = printf; sourceTree = "<group>"; };
+		28EE4FBF20C4451200A46A28 /* id */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = id; sourceTree = "<group>"; };
+		28EE4FC020C4451200A46A28 /* script */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = script; sourceTree = "<group>"; };
+		28EE4FC120C4451200A46A28 /* scp */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = scp; sourceTree = "<group>"; };
+		28EE4FC220C4451300A46A28 /* du */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = du; sourceTree = "<group>"; };
+		28EE4FC320C4451300A46A28 /* head */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = head; sourceTree = "<group>"; };
+		28EE4FC420C4451300A46A28 /* stat */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = stat; sourceTree = "<group>"; };
+		28EE4FC520C4451300A46A28 /* uname */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = uname; sourceTree = "<group>"; };
+		28EE4FC620C4451300A46A28 /* which */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = which; sourceTree = "<group>"; };
+		28EE4FC720C4451300A46A28 /* tar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tar; sourceTree = "<group>"; };
+		28EE4FC820C4451300A46A28 /* syslog */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = syslog; sourceTree = "<group>"; };
+		28EE4FC920C4451300A46A28 /* passwd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = passwd; sourceTree = "<group>"; };
+		28EE4FCA20C4451300A46A28 /* xargs */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = xargs; sourceTree = "<group>"; };
+		28EE4FCB20C4451300A46A28 /* find */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = find; sourceTree = "<group>"; };
+		28EE4FCC20C4451400A46A28 /* grep */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = grep; sourceTree = "<group>"; };
+		28EE4FCD20C4451400A46A28 /* lsmp */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = lsmp; sourceTree = "<group>"; };
+		28EE4FCE20C4451400A46A28 /* w */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = w; sourceTree = "<group>"; };
+		28EE4FCF20C4451400A46A28 /* xxd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = xxd; sourceTree = "<group>"; };
+		28EE4FD020C4451400A46A28 /* false */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = false; sourceTree = "<group>"; };
+		28EE4FD120C4451400A46A28 /* nano */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = nano; sourceTree = "<group>"; };
+		28EE4FD220C4451400A46A28 /* what */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = what; sourceTree = "<group>"; };
+		28EE4FD320C4451400A46A28 /* nohup */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = nohup; sourceTree = "<group>"; };
+		28EE4FD420C4451400A46A28 /* seq */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = seq; sourceTree = "<group>"; };
+		28EE4FD520C4451400A46A28 /* tset */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tset; sourceTree = "<group>"; };
+		28EE4FD620C4451500A46A28 /* time */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = time; sourceTree = "<group>"; };
+		28EE4FD720C4451500A46A28 /* killall */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = killall; sourceTree = "<group>"; };
+		28EE4FD820C4451500A46A28 /* tee */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tee; sourceTree = "<group>"; };
+		28EE4FD920C4451500A46A28 /* uicache */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = uicache; sourceTree = "<group>"; };
+		28EE4FDA20C4451500A46A28 /* more */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = more; sourceTree = "<group>"; };
+		28EE501020C4452500A46A28 /* ioreg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ioreg; sourceTree = "<group>"; };
+		28EE501120C4452600A46A28 /* joreg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = joreg; sourceTree = "<group>"; };
+		28EE501220C4452600A46A28 /* kextstat */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = kextstat; sourceTree = "<group>"; };
+		28EE501320C4452600A46A28 /* taskpolicy */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = taskpolicy; sourceTree = "<group>"; };
+		28EE501420C4452600A46A28 /* ltop */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ltop; sourceTree = "<group>"; };
+		28EE501520C4452600A46A28 /* sysctl */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sysctl; sourceTree = "<group>"; };
+		28EE501620C4452600A46A28 /* netstat */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = netstat; sourceTree = "<group>"; };
+		28EE501720C4452700A46A28 /* chown */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = chown; sourceTree = "<group>"; };
+		28EE502020C4452F00A46A28 /* ifconfig */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ifconfig; sourceTree = "<group>"; };
+		28EE502120C4452F00A46A28 /* mknod */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mknod; sourceTree = "<group>"; };
+		28EE502220C4452F00A46A28 /* kextunload */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = kextunload; sourceTree = "<group>"; };
+		28EE502320C4453000A46A28 /* md5 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = md5; sourceTree = "<group>"; };
+		28EE502420C4453000A46A28 /* dmesg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = dmesg; sourceTree = "<group>"; };
+		28EE502520C4453000A46A28 /* umount */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = umount; sourceTree = "<group>"; };
+		28EE502620C4453000A46A28 /* shutdown */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = shutdown; sourceTree = "<group>"; };
+		28EE502720C4453100A46A28 /* ping */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ping; sourceTree = "<group>"; };
 		B0E5165A1E39459300CE4C47 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		B0F37BBD1E361EAE00179E85 /* extra_recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = extra_recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F37BC01E361EAE00179E85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,11 +251,121 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28EE4F7620C43E4700A46A28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28EE4F7720C43E4700A46A28 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28EE4F7B20C444B100A46A28 /* ios64bin */ = {
+			isa = PBXGroup;
+			children = (
+				28EE502420C4453000A46A28 /* dmesg */,
+				28EE502020C4452F00A46A28 /* ifconfig */,
+				28EE502220C4452F00A46A28 /* kextunload */,
+				28EE502320C4453000A46A28 /* md5 */,
+				28EE502120C4452F00A46A28 /* mknod */,
+				28EE502720C4453100A46A28 /* ping */,
+				28EE502620C4453000A46A28 /* shutdown */,
+				28EE502520C4453000A46A28 /* umount */,
+				28EE501720C4452700A46A28 /* chown */,
+				28EE501020C4452500A46A28 /* ioreg */,
+				28EE501120C4452600A46A28 /* joreg */,
+				28AEB58720C44A7C00B096A3 /* dropbear */,
+				28AEB58420C44A7B00B096A3 /* dropbear.orig */,
+				28AEB58620C44A7C00B096A3 /* dropbearconvert */,
+				28AEB58520C44A7B00B096A3 /* dropbearkey */,
+				28EE501220C4452600A46A28 /* kextstat */,
+				28EE501420C4452600A46A28 /* ltop */,
+				28EE501620C4452600A46A28 /* netstat */,
+				28EE501520C4452600A46A28 /* sysctl */,
+				28EE501320C4452600A46A28 /* taskpolicy */,
+				28EE4FAB20C4451000A46A28 /* arch */,
+				28EE4FB420C4451100A46A28 /* chflags */,
+				28EE4FA820C4451000A46A28 /* clear */,
+				28EE4FAE20C4451100A46A28 /* cut */,
+				28EE4FC220C4451300A46A28 /* du */,
+				28EE4FD020C4451400A46A28 /* false */,
+				28EE4FCB20C4451300A46A28 /* find */,
+				28EE4FBA20C4451200A46A28 /* fs_usage */,
+				28EE4FCC20C4451400A46A28 /* grep */,
+				28EE4FAD20C4451000A46A28 /* gunzip */,
+				28EE4FB520C4451100A46A28 /* gzip */,
+				28EE4FC320C4451300A46A28 /* head */,
+				28EE4FAF20C4451100A46A28 /* hexdump */,
+				28EE4FA920C4451000A46A28 /* hostinfo */,
+				28EE4FBF20C4451200A46A28 /* id */,
+				28EE4FD720C4451500A46A28 /* killall */,
+				28EE4FBD20C4451200A46A28 /* less */,
+				28EE4FBB20C4451200A46A28 /* login */,
+				28EE4FCD20C4451400A46A28 /* lsmp */,
+				28EE4FDA20C4451500A46A28 /* more */,
+				28EE4FD120C4451400A46A28 /* nano */,
+				28EE4FD320C4451400A46A28 /* nohup */,
+				28EE4FC920C4451300A46A28 /* passwd */,
+				28EE4FB020C4451100A46A28 /* plconvert */,
+				28EE4FBE20C4451200A46A28 /* printf */,
+				28EE4FB620C4451100A46A28 /* renice */,
+				28EE4FB120C4451100A46A28 /* reset */,
+				28EE4FB920C4451200A46A28 /* sc_usage */,
+				28EE4FC120C4451200A46A28 /* scp */,
+				28EE4FB720C4451100A46A28 /* screen */,
+				28EE4FC020C4451200A46A28 /* script */,
+				28EE4FB820C4451100A46A28 /* sed */,
+				28EE4FD420C4451400A46A28 /* seq */,
+				28EE4FA620C4450F00A46A28 /* split */,
+				28EE4FB320C4451100A46A28 /* sqlite3 */,
+				28EE4FC420C4451300A46A28 /* stat */,
+				28EE4FC820C4451300A46A28 /* syslog */,
+				28EE4FAA20C4451000A46A28 /* tail */,
+				28EE4FC720C4451300A46A28 /* tar */,
+				28EE4FD820C4451500A46A28 /* tee */,
+				28EE4FD620C4451500A46A28 /* time */,
+				28EE4FBC20C4451200A46A28 /* true */,
+				28EE4FD520C4451400A46A28 /* tset */,
+				28EE4FD920C4451500A46A28 /* uicache */,
+				28EE4FC520C4451300A46A28 /* uname */,
+				28EE4FA720C4450F00A46A28 /* vim */,
+				28EE4FB220C4451100A46A28 /* vm_stat */,
+				28EE4FCE20C4451400A46A28 /* w */,
+				28EE4FAC20C4451000A46A28 /* wc */,
+				28EE4FD220C4451400A46A28 /* what */,
+				28EE4FC620C4451300A46A28 /* which */,
+				28EE4FCA20C4451300A46A28 /* xargs */,
+				28EE4FCF20C4451400A46A28 /* xxd */,
+				28EE4F7C20C444B100A46A28 /* bash */,
+				28EE4F7D20C444B100A46A28 /* cat */,
+				28EE4F7E20C444B100A46A28 /* chmod */,
+				28EE4F7F20C444B100A46A28 /* cp */,
+				28EE4F8020C444B100A46A28 /* date */,
+				28EE4F8120C444B100A46A28 /* dd */,
+				28EE4F8220C444B100A46A28 /* hostname */,
+				28EE4F8320C444B100A46A28 /* kill */,
+				28EE4F8420C444B100A46A28 /* launchctl */,
+				28EE4F8520C444B100A46A28 /* ln */,
+				28EE4F8620C444B100A46A28 /* ls */,
+				28EE4F8720C444B100A46A28 /* mkdir */,
+				28EE4F8820C444B100A46A28 /* mv */,
+				28EE4F8920C444B100A46A28 /* pwd */,
+				28EE4F8A20C444B100A46A28 /* rm */,
+				28EE4F8B20C444B100A46A28 /* rmdir */,
+				28EE4F8C20C444B100A46A28 /* sh */,
+				28EE4F8D20C444B100A46A28 /* sleep */,
+				28EE4F8E20C444B100A46A28 /* stty */,
+				28EE4F8F20C444B100A46A28 /* sync */,
+				28EE4F9020C444B100A46A28 /* zsh */,
+			);
+			path = ios64bin;
+			sourceTree = "<group>";
+		};
 		B0F37BB41E361EAD00179E85 = {
 			isa = PBXGroup;
 			children = (
 				B0F37BBF1E361EAE00179E85 /* extra_recipe */,
 				B0F37BBE1E361EAE00179E85 /* Products */,
+				28EE4F7620C43E4700A46A28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +380,7 @@
 		B0F37BBF1E361EAE00179E85 /* extra_recipe */ = {
 			isa = PBXGroup;
 			children = (
+				28EE4F7B20C444B100A46A28 /* ios64bin */,
 				12242A8A20C1B84900B28377 /* extra_recipe.entitlements */,
 				B0F37BC01E361EAE00179E85 /* AppDelegate.swift */,
 				B0F37BC21E361EAE00179E85 /* ViewController.swift */,
@@ -172,10 +472,104 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EE501F20C4452700A46A28 /* chown in Resources */,
+				28EE4FF820C4451500A46A28 /* head in Resources */,
+				28EE500D20C4451500A46A28 /* tee in Resources */,
+				28AEB58920C44A7C00B096A3 /* dropbearkey in Resources */,
+				28EE4FDD20C4451500A46A28 /* clear in Resources */,
+				28EE4FF220C4451500A46A28 /* less in Resources */,
+				28EE4FA220C444B100A46A28 /* sleep in Resources */,
+				28EE501A20C4452700A46A28 /* kextstat in Resources */,
+				28EE4F9E20C444B100A46A28 /* pwd in Resources */,
+				28EE4F9B20C444B100A46A28 /* ls in Resources */,
+				28EE500620C4451500A46A28 /* nano in Resources */,
+				28EE500320C4451500A46A28 /* w in Resources */,
+				28EE502E20C4453100A46A28 /* shutdown in Resources */,
+				28EE500E20C4451500A46A28 /* uicache in Resources */,
+				28EE4FF320C4451500A46A28 /* printf in Resources */,
+				28EE4FEB20C4451500A46A28 /* renice in Resources */,
+				28EE4FE420C4451500A46A28 /* hexdump in Resources */,
+				28EE4F9A20C444B100A46A28 /* ln in Resources */,
+				28EE4FF420C4451500A46A28 /* id in Resources */,
+				28EE4F9720C444B100A46A28 /* hostname in Resources */,
+				28EE500420C4451500A46A28 /* xxd in Resources */,
+				28EE500F20C4451500A46A28 /* more in Resources */,
+				28EE4FFF20C4451500A46A28 /* xargs in Resources */,
+				28EE4FFE20C4451500A46A28 /* passwd in Resources */,
+				28EE502920C4453100A46A28 /* mknod in Resources */,
+				28EE4F9D20C444B100A46A28 /* mv in Resources */,
+				28EE4FDE20C4451500A46A28 /* hostinfo in Resources */,
+				28EE4F9620C444B100A46A28 /* dd in Resources */,
+				28EE4FFD20C4451500A46A28 /* syslog in Resources */,
+				28EE502B20C4453100A46A28 /* md5 in Resources */,
+				28EE500120C4451500A46A28 /* grep in Resources */,
+				28EE4F9F20C444B100A46A28 /* rm in Resources */,
+				28AEB58820C44A7C00B096A3 /* dropbear.orig in Resources */,
+				28EE4F9520C444B100A46A28 /* date in Resources */,
+				28EE4FE320C4451500A46A28 /* cut in Resources */,
 				B0E5165B1E39459300CE4C47 /* README in Resources */,
+				28EE4FEF20C4451500A46A28 /* fs_usage in Resources */,
+				28EE502D20C4453100A46A28 /* umount in Resources */,
+				28EE4FE520C4451500A46A28 /* plconvert in Resources */,
+				28EE4FE120C4451500A46A28 /* wc in Resources */,
+				28EE501B20C4452700A46A28 /* taskpolicy in Resources */,
+				28EE502820C4453100A46A28 /* ifconfig in Resources */,
+				28EE500520C4451500A46A28 /* false in Resources */,
+				28EE4F9420C444B100A46A28 /* cp in Resources */,
+				28EE4FEE20C4451500A46A28 /* sc_usage in Resources */,
+				28EE4FE620C4451500A46A28 /* reset in Resources */,
+				28AEB58A20C44A7C00B096A3 /* dropbearconvert in Resources */,
+				28EE500C20C4451500A46A28 /* killall in Resources */,
+				28EE4FE820C4451500A46A28 /* sqlite3 in Resources */,
 				B0F37BCB1E361EAE00179E85 /* LaunchScreen.storyboard in Resources */,
+				28EE4F9120C444B100A46A28 /* bash in Resources */,
+				28EE500920C4451500A46A28 /* seq in Resources */,
+				28EE500020C4451500A46A28 /* find in Resources */,
+				28EE4FF620C4451500A46A28 /* scp in Resources */,
+				28EE4FA120C444B100A46A28 /* sh in Resources */,
+				28EE4FA320C444B100A46A28 /* stty in Resources */,
+				28EE4FE220C4451500A46A28 /* gunzip in Resources */,
+				28EE501D20C4452700A46A28 /* sysctl in Resources */,
+				28EE4FDB20C4451500A46A28 /* split in Resources */,
+				28EE4F9220C444B100A46A28 /* cat in Resources */,
+				28EE4F9820C444B100A46A28 /* kill in Resources */,
+				28EE4FF020C4451500A46A28 /* login in Resources */,
+				28EE500A20C4451500A46A28 /* tset in Resources */,
+				28EE4FFB20C4451500A46A28 /* which in Resources */,
+				28EE4FE020C4451500A46A28 /* arch in Resources */,
+				28EE502A20C4453100A46A28 /* kextunload in Resources */,
+				28EE4FDC20C4451500A46A28 /* vim in Resources */,
+				28EE502F20C4453100A46A28 /* ping in Resources */,
+				28EE4FFC20C4451500A46A28 /* tar in Resources */,
+				28EE500B20C4451500A46A28 /* time in Resources */,
+				28EE4FA420C444B100A46A28 /* sync in Resources */,
+				28EE4FEC20C4451500A46A28 /* screen in Resources */,
+				28EE4FF920C4451500A46A28 /* stat in Resources */,
+				28EE500220C4451500A46A28 /* lsmp in Resources */,
+				28EE501E20C4452700A46A28 /* netstat in Resources */,
+				28EE501920C4452700A46A28 /* joreg in Resources */,
+				28EE501C20C4452700A46A28 /* ltop in Resources */,
+				28EE502C20C4453100A46A28 /* dmesg in Resources */,
+				28EE500820C4451500A46A28 /* nohup in Resources */,
+				28AEB58B20C44A7C00B096A3 /* dropbear in Resources */,
 				B0F37BC81E361EAE00179E85 /* Assets.xcassets in Resources */,
+				28EE4FF520C4451500A46A28 /* script in Resources */,
+				28EE4FF720C4451500A46A28 /* du in Resources */,
+				28EE4FF120C4451500A46A28 /* true in Resources */,
+				28EE4FE920C4451500A46A28 /* chflags in Resources */,
+				28EE4FA520C444B100A46A28 /* zsh in Resources */,
+				28EE501820C4452700A46A28 /* ioreg in Resources */,
+				28EE4FE720C4451500A46A28 /* vm_stat in Resources */,
+				28EE4FA020C444B100A46A28 /* rmdir in Resources */,
+				28EE4F9C20C444B100A46A28 /* mkdir in Resources */,
+				28EE4FEA20C4451500A46A28 /* gzip in Resources */,
+				28EE4F9320C444B100A46A28 /* chmod in Resources */,
+				28EE4F9920C444B100A46A28 /* launchctl in Resources */,
+				28EE4FDF20C4451500A46A28 /* tail in Resources */,
+				28EE500720C4451500A46A28 /* what in Resources */,
+				28EE4FFA20C4451500A46A28 /* uname in Resources */,
 				B0F37BC61E361EAE00179E85 /* Main.storyboard in Resources */,
+				28EE4FED20C4451500A46A28 /* sed in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
